@@ -1,5 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 
-body{
+:root {
+  --color1: #7d7967;
+  --color2: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: "Mulish", sans-serif;
+}
+
+.container {
+  max-width: 1360px;
+  margin: 0 80px;
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  background-color: var(--color2);
+  padding: 30px 0;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  padding-left: 30px;
+}
+
+.menu li a {
+  display: inline;
+  text-decoration: none;
+  text-align: center;
+  color: var(--color1);
+  transition: 0.15s ease-in-out;
+  position: relative;
+}
+
+.menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #1f1534;
+  transition: 0.4s ease-in-out;
+}
+
+.menu li a:hover,
+.menu li a:hover:after {
+  width: 100%;
+  color: #1f1534;
 }
