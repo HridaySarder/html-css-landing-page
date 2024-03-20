@@ -12,9 +12,9 @@
 }
 
 .wrapper {
-  background-image: url("./image/element.svg");
+  background-image: url("./image/element.svg"), url("./image/Vector.svg");
   background-repeat: no-repeat;
-  background-position: 0 110px;
+  background-position: 0 6%, 0 84%;
 }
 
 body {
@@ -156,6 +156,97 @@ body {
   background-color: #0d6df3;
 }
 
+.service {
+  margin: 190px 0;
+}
+
+.service-title {
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+hr {
+  width: 56px;
+  height: 4px;
+  margin: 20px auto;
+  border-radius: 5px;
+  background: #000;
+}
+.service-description {
+  color: #7d7987;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+  margin-bottom: 80px;
+}
+
+.service-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+
+.service-card {
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* gap: 20px; */
+  padding: 40px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.card-description {
+  color: #7d7987;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.parent-btn {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.learn-btn {
+  color: #458ff6;
+  background-color: white;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  padding: 18px 40px;
+  border-radius: 55px;
+  border: 1.4px solid #458ff6;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.learn-btn:hover {
+  background-color: #458ff6;
+  color: white;
+}
+
 @media screen and (max-width: 500px) {
   .container {
     margin: 0 15px;
@@ -211,7 +302,17 @@ body {
   }
 
   .banner-img img {
-    width: 65%;
+    width: 85%;
     margin: 0 15px;
+  }
+
+  .service-items {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    justify-content: center;
+  }
+
+  .service-description {
+    padding: 0 15px;
   }
 }
